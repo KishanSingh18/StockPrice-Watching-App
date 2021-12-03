@@ -1,3 +1,7 @@
+Task ID: Stock Trading App
+
+
+
 This is a Stock prices watching app
 
 There are few important things to keep in mind before using this app:
