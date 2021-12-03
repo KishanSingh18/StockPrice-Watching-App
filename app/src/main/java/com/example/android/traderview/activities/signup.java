@@ -102,6 +102,7 @@ public class signup extends AppCompatActivity {
                             finish();
                         }
                         else{
+                            progressBar.setVisibility(View.GONE);
                             Toast.makeText(signup.this, "Some error has occured"+task.getException().getMessage(), Toast.LENGTH_LONG).show();           //making a toast if some error is occured while making a new user
                         }
                     }
