@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_light"
+    tools:context=".activities.MainActivity">
+    <include layout="@layout/action_bar"
+        android:id="@+id/action_barthis"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/action_barthis"
+        android:background="?android:attr/listDivider"></View>
+
+<FrameLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/action_barthis"
+    android:layout_above="@id/nav_bar"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/nav_bar"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_light"
+        app:itemIconTint="@color/white"
+        app:menu="@menu/nav_bar"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="35dp"
+        app:itemRippleColor="@color/teal_700">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/nav_bar"
+        android:backgroundTint="@color/white"
+        android:background="?android:attr/listDivider" />
+
+
+
+
+</RelativeLayout>
